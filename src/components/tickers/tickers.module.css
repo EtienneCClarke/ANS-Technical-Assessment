@@ -1,0 +1,42 @@
+.tickers__container {
+    display: flex;
+    flex-direction: column;
+    margin-block: 5svh;
+}
+
+.ticker_card__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    border: 1px solid hsl(var(--foreground) / 0.2);
+    border-bottom: none;
+    padding-block: 1rem;
+    padding-inline: 0.75rem;
+    transition: background 50ms;
+}
+
+.ticker_card__container:last-of-type {
+    border-bottom: 1px solid hsl(var(--foreground) / 0.2);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.ticker_card__container:hover {
+    background: hsl(var(--foreground) / 0.05);
+}
+
+.ticker_heading {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    background: hsl(var(--foreground) / 0.2);
+    padding-block: 1rem;
+    padding-inline: 0.75rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.grid_heading {
+    font-size: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.ticker_card__container p[data-cell] {
+    padding-right: 1rem;
+}
