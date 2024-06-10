@@ -18,8 +18,15 @@ const Tickers = () => {
     if(data) {
         return (
             <div className={css.tickers__container}>
+                {Object.keys(data).map(ticker => {
+                    return (
+                        <p>{data[ticker]?.symbol}</p>
+                    )
+                })}
             </div>
         )
     }
 
 }
+
+export { Tickers }

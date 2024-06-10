@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/tabs";
+import { Tickers } from "./components/tickers";
 import { CurrenciesProvider } from "./context/currencies";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 				</TabsList>
 				<TabsContent value="tickers">
 					<h1>Tickers</h1>
+					<Tickers />
 				</TabsContent>
 				<TabsContent value="exchange">
 					<h1>Exchange</h1>
