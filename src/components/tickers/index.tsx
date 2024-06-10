@@ -25,8 +25,9 @@ const Tickers = () => {
     if(data) {
         return (
             <div className={css.tickers__container}>
+                <h2 className={css.title}>Current price of Bitcoin</h2>
                 <div className={css.ticker_heading}>
-                    <h2 className={css.grid_heading}>Symbol</h2>
+                    <h2 className={css.grid_heading}>Currency</h2>
                     <h2 className={css.grid_heading}>15m</h2>
                     <h2 className={css.grid_heading}>Last</h2>
                     <h2 className={css.grid_heading}>Buy</h2>
