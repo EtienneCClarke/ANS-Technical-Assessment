@@ -13,7 +13,6 @@ function App() {
 					<TabsTrigger value="exchange">Exchange</TabsTrigger>
 				</TabsList>
 				<TabsContent value="tickers">
-					<h1>Tickers</h1>
 					<Tickers />
 				</TabsContent>
 				<TabsContent value="exchange">
