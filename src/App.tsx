@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/tabs";
 function App() {
 
   return (
-	<section>
+	<section className="view">
 		<Tabs defaultValue="tickers">
 		<TabsList>
 			<TabsTrigger value="tickers">Tickers</TabsTrigger>
