@@ -1,3 +1,4 @@
+import { Exchange } from "./components/exchange";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/tabs";
 import { Tickers } from "./components/tickers";
 import { CurrenciesProvider } from "./context/currencies";
@@ -16,7 +17,7 @@ function App() {
 					<Tickers />
 				</TabsContent>
 				<TabsContent value="exchange">
-					<h1>Exchange</h1>
+					<Exchange defaultCurrency="GBP" />
 				</TabsContent>
 			</Tabs>
 		</CurrenciesProvider>

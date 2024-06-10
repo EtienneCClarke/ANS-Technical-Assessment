@@ -1,0 +1,72 @@
+.exchange__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5svh;
+    margin-top: 5vh;
+}
+
+.title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.input__container {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.value_input {
+    background: transparent;
+    border: 1px solid hsl(var(--foreground) / 0.4);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    line-height: 1.25rem;
+    font-size: 1.25rem;
+    flex-grow: 1;
+}
+
+.currency_select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background: hsl(var(--foreground) / 0.1);
+    border: 1px solid hsl(var(--foreground) / 0.4);
+}
+
+.currency_select option {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+}
+
+.swap_icon {
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    fill: hsl(var(--foreground))
+}
+
+.exchange_result__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    /* margin-inline: auto; */
+    border: 1px solid hsl(var);
+}
+
+.btc_icon {
+    aspect-ratio: 1 / 1;
+    max-height: 25px;
+}
+
+.exchange_result {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.exchange_amount {
+    font-weight: 500;
+}
